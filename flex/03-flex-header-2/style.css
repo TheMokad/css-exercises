@@ -2,10 +2,14 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+* {
+  outline: 1px solid black;
+}
+
 body {
-  margin: 0;
-  background: #eee;
+  background: lightgray;
   font-family: Besley, serif;
+  display: flex;
 }
 
 .header {
@@ -20,6 +24,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -43,6 +48,18 @@ a {
   color: rebeccapurple;
 }
 
+.links {
+}
+
 ul {
   list-style-type: none;
+  display: flex;
 }
+
+.leftStuff,
+.rightStuff{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
